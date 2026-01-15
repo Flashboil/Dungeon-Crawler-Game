@@ -1,0 +1,15 @@
+C:\dev\Dungeon-Crawler-Game\bin\Debug\net10.0\Dungeon-Crawler-Game.exe
+C:\dev\Dungeon-Crawler-Game\bin\Debug\net10.0\Dungeon-Crawler-Game.deps.json
+C:\dev\Dungeon-Crawler-Game\bin\Debug\net10.0\Dungeon-Crawler-Game.runtimeconfig.json
+C:\dev\Dungeon-Crawler-Game\bin\Debug\net10.0\Dungeon-Crawler-Game.dll
+C:\dev\Dungeon-Crawler-Game\bin\Debug\net10.0\Dungeon-Crawler-Game.pdb
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\Dungeon-Crawler-Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\Dungeon-Crawler-Game.AssemblyInfoInputs.cache
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\Dungeon-Crawler-Game.AssemblyInfo.cs
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\Dungeon-Crawler-Game.csproj.CoreCompileInputs.cache
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\Dungeon-Crawler-Game.sourcelink.json
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\Dungeon-Crawler-Game.dll
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\refint\Dungeon-Crawler-Game.dll
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\Dungeon-Crawler-Game.pdb
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\Dungeon-Crawler-Game.genruntimeconfig.cache
+C:\dev\Dungeon-Crawler-Game\obj\Debug\net10.0\ref\Dungeon-Crawler-Game.dll
