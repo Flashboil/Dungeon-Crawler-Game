@@ -1,5 +1,5 @@
 ﻿using DungeonCrawler;
 
-Room newroom = new Room("hallway", "it's a hallway", 0, 1);
+Map map = new Map();
 
-Console.WriteLine(newroom.GetCoordinates());
+Console.WriteLine(map.GetRoom(0).GetName());
