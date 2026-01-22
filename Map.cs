@@ -31,12 +31,14 @@ public class Map
         int roomType = GetRoom(_playerLocation).GetRoomType();
         List<string> options = GetValidMoves(roomType);
 
-        Console.WriteLine("Your options are:");
+        Console.Write("Your options are:\n(");
 
         foreach (string option in options)
         {
-            Console.WriteLine(option);
+            Console.Write($" {option} ");
         }
+
+        Console.WriteLine(")");
 
         // Prompt player for movement, update player location.
         string move_direction = GetMovementResponse(options);
