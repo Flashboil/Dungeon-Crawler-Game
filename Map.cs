@@ -12,6 +12,7 @@ public class Map
         _rooms = new Dictionary<(int, int), Room>();
         _playerLocation = (0, 0);
 
+        // Intialize the root room as (0, 0), dead end type room.
         _rooms![(0, 0)] = new Room(
             "The Entryway", 
             "You find yourself in dimly lit chamber. Before you is a door leading into a dark hallway.", 
@@ -20,7 +21,7 @@ public class Map
             );
     }
 
-    public void PlayGame()
+    public bool PlayGame()
     {
         // Display the room name, description, and movement options.
         Console.WriteLine($"{GetRoom(_playerLocation).GetName()}\n");
@@ -44,6 +45,10 @@ public class Map
         string move_direction = GetMovementResponse(options);
 
         MovePlayer(move_direction);
+
+        Console.Clear();
+
+        return true;
     }
 
     public List<string> GetValidMoves(int type)
@@ -82,6 +87,7 @@ public class Map
     {
         string response = Console.ReadLine()!;
 
+        // Prompt for a response until it matches a valid option from the list.
         while (!options.Contains(response)){
             Console.WriteLine("That is not a valid movement option.");
 

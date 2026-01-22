@@ -6,7 +6,6 @@ public class Room
     private string _description;
     private (int x, int y) _coordinates;
     private int _roomType;
-    private string _roomVisual;
 
     public static readonly int[] roomTypes =
     {
@@ -14,14 +13,6 @@ public class Room
         3, 4, 5, 6,
         7, 8, 9, 10,
         11, 12, 13, 14
-    };
-        
-    public static readonly string[] typeVisuals =
-    {
-        "┃", "━", "╋",
-        "┗", "┏", "┓", "┛",
-        "┣", "┳", "┫", "┻",
-        "╹", "╺", "╻", "╸"
     };
 
     public Room(string name, string description, int x, int y, int type)
@@ -31,7 +22,6 @@ public class Room
         _coordinates = (x, y);
         
         _roomType = type;
-        _roomVisual = typeVisuals[type];
     }
     
     public string GetName()
@@ -47,11 +37,6 @@ public class Room
     public (int, int) GetCoordinates()
     {
         return _coordinates;
-    }
-
-    public string GetVisual()
-    {
-        return _roomVisual;
     }
 
     public int GetRoomType()
