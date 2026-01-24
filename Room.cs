@@ -44,4 +44,8 @@ public class Room
         return _roomType;
     }
 
+    public virtual bool PromptPassword()
+    {
+        return false;
+    }
 }

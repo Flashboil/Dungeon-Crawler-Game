@@ -24,8 +24,20 @@ public class Map
     public bool PlayGame()
     {
         // Display the room name, description, and movement options.
-        Console.WriteLine($"{GetRoom(_playerLocation).GetName()}\n");
-        Console.WriteLine($"{GetRoom(_playerLocation).GetDescription()}\n");
+        Room current_room = GetRoom(_playerLocation);
+
+        Console.WriteLine($"{current_room.GetName()}\n");
+        Console.WriteLine($"{current_room.GetDescription()}\n");
+
+        // If the current room is the final room, prompt for the password to end the game.
+        if (current_room is FinalRoom)
+        {
+            if (current_room.PromptPassword())
+            {
+                return false;
+            }
+        }
+
         Console.WriteLine("Enter the direction you want to go. Type 'n' for north, 's' for south, etc.");
 
         // Find valid movements based on current room type.
@@ -55,6 +67,7 @@ public class Map
     {
         List<string> options = new List<string>();
 
+        // Sets of all the room types with valid moves to the north, east, etc.
         HashSet<int> north = new(){0, 2, 3, 6, 7, 9, 10, 11};
         HashSet<int> east = new(){1, 2, 3, 4, 7, 8, 10, 12};
         HashSet<int> south = new(){0, 2, 4, 5, 7, 8, 9, 13};

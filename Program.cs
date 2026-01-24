@@ -1,4 +1,5 @@
-﻿using DungeonCrawler;
+﻿using System.Reflection;
+using DungeonCrawler;
 
 Map map = new Map();
 
@@ -34,7 +35,7 @@ map.AddRoom((-2,2), new Room(
 ));
 map.AddRoom((-2,3), new Room(
 "The Laboratory",
-"You enter a humid room full of pipes, beakers, and alchemical instruments fo every kind. All the pipes converge at a raised platform at the center. Valves and levers on the platforms seem to control the flow of the pipes' contents into the various machinery. A large tome is open on the table by the controls.\n'LET THE FIRST KEY BE FOUND IN THE CHEMICAL NUMBER OF NIRTOGEN.'",
+"You enter a humid room full of pipes, beakers, and alchemical instruments fo every kind. All the pipes converge at a raised platform at the center. Valves and levers on the platforms seem to control the flow of the pipes' contents into the various machinery. A large tome is open on the table by the controls.\n'LET THE FIRST KEY BE FOUND IN THE ATOMIC NUMBER OF NIRTOGEN.'",
 -2, 3,
 13
 ));
@@ -70,7 +71,7 @@ map.AddRoom((2,0), new Room(
 ));
 map.AddRoom((3,0), new Room(
 "The Lyceum",
-"The room is full of worktables heaped high with papers. The walls are covered in dials and instruments for counting. Most of the floor is likewise covered in papers, drafts of mathematical equations left scattered as the towering piles on the desks toppled. You notice a large tome nestled among all the other papers. As you approach it, you realize that a corpse lies buried among the pages.\n'LET THE THRID KEY BE FOUND IN THE SOLUTION TO OUR EQUATION.'\nAn absurdly long equation is written below, but it's almost finished. It seems your predecessor did most of the work for you before he met his unpleasant end.\n'2x + 3 = 11'",
+"The room is full of worktables heaped high with papers. The walls are covered in dials and instruments for counting. Most of the floor is likewise covered in papers, drafts of mathematical equations left scattered as the towering piles on the desks toppled. You notice a large tome nestled among all the other papers. As you approach it, you realize that a corpse lies buried among the pages.\n'LET THE THRID KEY BE FOUND IN THE SOLUTION TO OUR EQUATION.'\nAn absurdly long equation is written below, but it's almost solved. It seems your predecessor did most of the work for you before he met his unpleasant end.\n'2x + 3 = 11'",
 3, 0,
 14
 ));
@@ -86,10 +87,26 @@ map.AddRoom((2,3), new Room(
 2, 3,
 5
 ));
+map.AddRoom((1,3), new FinalRoom(
+"The Vault",
+"Before you is a large vault door. Its dark metal surface etched with the image of a large branching tree. In the center of it is a giant lock composed of three circular dials. It seems you can use these dials to enter a three digit password.",
+1, 3,
+12
+));
 
+// Into text.
+Console.WriteLine("~THE VAULT~\n");
+Console.WriteLine("You came looking for something sealed here, deep underground. Look for clues and make your way to the end.\nWhen prompted, enter the direction you want to go.\n");
+Console.Write("<ENTER>");
+Console.Read();
+Console.Clear();
 // Main game loop.
 bool running = true;
 while (running)
 {
     running = map.PlayGame();
 }
+// Win, final message and title.
+Console.Clear();
+Console.WriteLine("\nThe last lock clicks and the vault opens. You look inside and feel ██████ tear through your thoughts. Whatever ██████ is, you know at once that ██████ it was a mistake, because now you—\n");
+Console.WriteLine("~THE VAULT~");
