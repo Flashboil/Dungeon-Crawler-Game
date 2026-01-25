@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dungeon-Crawler-Game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+580341f3fba1529d17bfdb79a489d0f9e75bbc4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e070a69700e998c93cc97b95245d1c3fe4065151")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dungeon-Crawler-Game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dungeon-Crawler-Game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
